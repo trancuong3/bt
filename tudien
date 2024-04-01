@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tudien</title>
+</head>
+<body>
+<h2>nhập từ cần tra </h2>
+<label><input type="text" id="name"></label>
+<button onclick="check()">check</button>
+<p id="result"></p>
+</body>
+<script>
+  const arr1=["apple","banana"];
+
+  const arr2=["táo","chuối"];
+  function check()
+  {
+    let s=document.getElementById("name").value;
+    let result;
+    for(let i=0;i<arr1.length;i++)
+    {
+      if(s===arr1[i])
+      {
+        result=arr2[i];
+      }
+    }
+    document.getElementById("result").innerHTML=result;
+  }
+</script>
+</html>
